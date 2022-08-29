@@ -1,25 +1,30 @@
-import { Box } from "@chakra-ui/layout";
-import { useState } from "react";
-import Chatbox from "../components/Chatbox";
-import MyChats from "../components/MyChats";
-import SideDrawer from "../components/miscellaneous/SideDrawer";
-import { ChatState } from "../Context/ChatProvider";
+import React, { useEffect, useState } from 'react'
+import { ChatContext } from '../Context/ChatProvider'
+import { ChatState } from '../Context/ChatProvider'
+import { Container, Box, Text, Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
+import axios from 'axios'
+import SideDrawer from '../components/miscellaneous/SideDrawer'
+import ChatBox from '../components/ChatBox'
+import MyChats from '../components/myChats'
 
-const Chatpage = () => {
-  const [fetchAgain, setFetchAgain] = useState(false);
-  const { user } = ChatState();
+const ChatPage = () => {
+    
+  const {user} = ChatState();
+
+  const [fetchAgain, setFetchAgain] = useState(false)
+
+  // console.log(user);
 
   return (
-    <div style={{ width: "100%" }}>
+    <div style={{width:'100%'}}>
       {user && <SideDrawer />}
-      <Box d="flex" justifyContent="space-between" w="100%" h="91.5vh" p="10px">
-        {user && <MyChats fetchAgain={fetchAgain} />}
-        {user && (
-          <Chatbox fetchAgain={fetchAgain} setFetchAgain={setFetchAgain} />
-        )}
+      <Box display='flex' justifyContent='space-between' width='100%' height='89vh' padding='10px'>
+        {user && <MyChats fetchAgain={fetchAgain} setFetchAgain={setFetchAgain} />}
+        {user && <ChatBox fetchAgain={fetchAgain} setFetchAgain={setFetchAgain} />}
       </Box>
-    </div>
-  );
-};
 
-export default Chatpage;
+    </div>
+  )
+}
+
+export default ChatPage

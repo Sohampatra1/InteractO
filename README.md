@@ -1,8 +1,6 @@
-
 # InteractO
+InteractO is a Full Stack Chatting Application. Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
 
-InteractO is a Full Stack Chatting App.
-Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
 ## Tech Stack
 
 **Client:** React JS
@@ -10,20 +8,25 @@ Uses Socket.io for real time communication and stores user details in encrypted 
 **Server:** Node JS, Express JS
 
 **Database:** Mongo DB
-  
+
+**Secure Data Transfer:** Using JWT Token
+
+**Encryption of Sensitive Information:** Using BcryptJS
+
+**Realtime messaging:** Using Socket.io
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/Sohampatra1/InteractO
+  git clone https://github.com/RaunakGN2001/InteractO/
 ```
 
 Go to the project directory
 
 ```bash
-  cd mern-chat-app
+  cd InteractO
 ```
 
 Install dependencies
@@ -50,18 +53,26 @@ Start the Client
   npm start
 ```
 
-  
-# Features
+## Screenshots attached for Demo
 
 ### Authenticaton
-### Real Time Chatting with Typing indicators
-### One to One chat
-### Search Users
-### Create Group Chats
-### Notifications 
-### Add or Remove users from group
-## Made By
-- [@Sohampatra1](https://github.com/Sohampatra1)
-- [@RaunakGN2001](https://github.com/RaunakGN2001)
+![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/Sign-Up-Page.png)
+![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/Login-Page.png)
 
-  
+### One to One chat
+![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/One-to-one-chat.png)
+
+### Group Chat
+![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/Modify-Group.png)
+
+### Search Users
+![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/Search-Users.png)
+
+### Create Group Chats
+![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/Create-Group-Chat.png)
+
+### Profile View
+![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/view-profile.png)
+
+
+
