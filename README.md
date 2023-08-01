@@ -1,21 +1,33 @@
-# InteractO
+![Banner](https://github.com/RaunakGN2001/InteractO/blob/41f490d66dd102f1646b0f7d027d51429c9fe61a/Screenshots/Interacto_Banner.png)
+
+# 💬 InteractO
 InteractO is a Full Stack Chatting Application. Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
 
-## Tech Stack
+## ⚙️ Tech Stack
 
-**Client:** React JS
+ **```Client:```** React JS
 
-**Server:** Node JS, Express JS
+**```Server:```** Node JS, Express JS
 
-**Database:** Mongo DB
+**```Database:```** Mongo DB
 
-**Secure Data Transfer:** Using JWT Token
+**```Secure Data Transfer:```** Using JWT Token
 
-**Encryption of Sensitive Information:** Using BcryptJS
+**```Encryption of Sensitive Information:```** Using BcryptJS
 
-**Realtime messaging:** Using Socket.io
+**```Realtime messaging:```** Using Socket.io
 
-## Run Locally
+## ⭐️ Features
+- Users can register/login via email and password.
+- Profile page where users can view their avatar and display name.
+- Search functionality which can be used to search for users.
+- Real-time updates to the user list, conversation list, and conversation messages.
+- Authentication using JWT Tokens.
+- A Private Chat functionality where users can chat with other users privately.
+- Group Chat functionality where users can create their own group and add or remove users from it ( admin-only privilege ).
+- Name of Group can be updated even after creation.
+
+## 🏃🏽 Run Locally
 
 Clone the project
 
@@ -48,22 +60,20 @@ Start the server
 Start the Client
 
 ```bash
-  //open now terminal
   cd frontend
   npm start
 ```
 
-## Screenshots attached for Demo
+## Some Snapshots 🌅 are given below:
 
-### Authenticaton
-![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/Sign-Up-Page.png)
-![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/Login-Page.png)
+### 🔑 Authenticaton
+![Login/Signup](https://github.com/RaunakGN2001/InteractO/blob/eb09b53fdc578221a812d61a7036f5bfd8415f52/Screenshots/Auth.png)
 
-### One to One chat
-![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/One-to-one-chat.png)
+### 🙍-🙍‍♂️ One to One chat
+![One-to-One-Chat](https://github.com/RaunakGN2001/InteractO/blob/eb09b53fdc578221a812d61a7036f5bfd8415f52/Screenshots/One-to-one.png)
 
-### Group Chat
-![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/Modify-Group.png)
+### 👥👥 Group Chat
+![Group-Chat](https://github.com/RaunakGN2001/InteractO/blob/eb09b53fdc578221a812d61a7036f5bfd8415f52/Screenshots/Group-Chat.png)
 
 ### Search Users
 ![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/Search-Users.png)
@@ -73,6 +83,3 @@ Start the Client
 
 ### Profile View
 ![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/view-profile.png)
-
-
-
