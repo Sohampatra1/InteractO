@@ -18,6 +18,7 @@ import {
 import axios from 'axios'
 import UserListItem from '../UserAvatar/UserListItem'
 import ChatLoading from '../ChatLoading'
+import { SERVER_URI } from '../../config/backend-url'
 
 
 const DownIcon = () => {
@@ -59,7 +60,7 @@ const SideDrawer = () => {
                 },
             };
 
-            const { data } = await axios.post('/api/chat', { userId }, config);
+            const { data } = await axios.post(`${SERVER_URI}/api/chat`, { userId }, config);
 
             if(!chats.find((c) => c._id === data._id)) setChats([data, ...chats]);
 
@@ -102,7 +103,7 @@ const SideDrawer = () => {
             };
 
 
-            const { data } = await axios.get(`/api/user?search=${search}`, config);
+            const { data } = await axios.get(`${SERVER_URI}/api/user?search=${search}`, config);
 
             setLoading(false);
             setSearchResult(data);

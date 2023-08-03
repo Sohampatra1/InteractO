@@ -13,9 +13,11 @@ import animationData from "../animations/typing.json";
 import io from "socket.io-client";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import { ChatState } from "../Context/ChatProvider";
-var socket, selectedChatCompare;
+import { SERVER_URI } from '../config/backend-url'
 
-const ENDPOINT = 'https://interacto.herokuapp.com/'; // server
+
+var socket, selectedChatCompare;
+const ENDPOINT = 'https://interacto-backend.vercel.app'; // interacto backend url
 
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
@@ -51,7 +53,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       setLoading(true);
 
       const { data } = await axios.get(
-        `/api/message/${selectedChat._id}`,
+        `${SERVER_URI}/api/message/${selectedChat._id}`,
         config
       );
       setMessages(data);
@@ -82,7 +84,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         };
         setNewMessage("");
         const { data } = await axios.post(
-          "/api/message",
+          `${SERVER_URI}/api/message`,
           {
             content: newMessage,
             chatId: selectedChat,

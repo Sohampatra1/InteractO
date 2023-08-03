@@ -2,6 +2,7 @@ import React from 'react'
 import { useState ,useRef } from 'react'
 import { Text, Stack, HStack, VStack, FormControl, FormLabel, Input, InputGroup, InputRightAddon, InputRightElement, Button, useToast } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom';
+import { SERVER_URI } from '../../config/backend-url'
 import axios from 'axios';
 
 const Login = () => {
@@ -42,7 +43,7 @@ const Login = () => {
                 }, 
             };
 
-            const { data } = await axios.post('/api/user/login', { email, password }, config);
+            const { data } = await axios.post(`${SERVER_URI}/api/user/login`, { email, password }, config);
 
             toast ({
                 title: 'Login Successful',
