@@ -1,4 +1,4 @@
-![Banner](https://github.com/RaunakGN2001/InteractO/blob/41f490d66dd102f1646b0f7d027d51429c9fe61a/Screenshots/Interacto_Banner.png)
+![Banner](https://github.com/Sohampatra1/InteractO/blob/main/Screenshots/Interacto_Banner.png)
 
 # <img height='30px' src='https://github.com/RaunakGN2001/InteractO/blob/4e7329fca1a49fd5ae53d004d4a5806f4d0bcd63/frontend/public/favicon-32x32.png' /> InteractO
 InteractO is a Full Stack Chatting Application. Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
@@ -70,22 +70,22 @@ Start the Client
 ## Some Snapshots 🌅 are given below:
 
 ### 🔑 Authenticaton
-![Login/Signup](https://github.com/RaunakGN2001/InteractO/blob/eb09b53fdc578221a812d61a7036f5bfd8415f52/Screenshots/Auth.png)
+![Login/Signup](https://github.com/Sohampatra1/InteractO/blob/main/Screenshots/Auth.png)
 
 ### 🙍-🙍‍♂️ One to One chat
-![One-to-One-Chat](https://github.com/RaunakGN2001/InteractO/blob/eb09b53fdc578221a812d61a7036f5bfd8415f52/Screenshots/One-to-one.png)
+![One-to-One-Chat](https://github.com/Sohampatra1/InteractO/blob/main/Screenshots/One-to-one.png)
 
 ### 👥👥 Group Chat
-![Group-Chat](https://github.com/RaunakGN2001/InteractO/blob/eb09b53fdc578221a812d61a7036f5bfd8415f52/Screenshots/Group-Chat.png)
+![Group-Chat](https://github.com/Sohampatra1/InteractO/blob/main/Screenshots/Group-Chat.png)
 
 ### Search Users
-![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/Search-Users.png)
+![](https://github.com/Sohampatra1/InteractO/blob/main/Screenshots/Search-Users.png)
 
 ### Create Group Chats
-![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/Create-Group-Chat.png)
+![](https://github.com/Sohampatra1/InteractO/blob/main/Screenshots/Create-Group-Chat.png)
 
 ### Profile View
-![](https://github.com/RaunakGN2001/InteractO/blob/main/Screenshots/view-profile.png)
+![](https://github.com/Sohampatra1/InteractO/blob/main/Screenshots/view-profile.png)
 
 
 
