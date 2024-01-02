@@ -35,7 +35,7 @@ https://interacto.vercel.app/
 Clone the project
 
 ```bash
-  git clone https://github.com/RaunakGN2001/InteractO/
+  git clone https://github.com/Sohampatra1/InteractO/
 ```
 
 Go to the project directory
